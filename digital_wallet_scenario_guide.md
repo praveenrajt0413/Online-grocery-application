@@ -1,4 +1,5 @@
- For Example if a scenario is on Digital Wallet Reward what are the things need to be changed in the existing code
+ Source: ChatGPT
+ For Example if a scenario is on Digital Wallet Reward what are the things need to be changed in the existing code a practical implementation
 
 The setup files (pom.xml, Dockerfile, deployment.yaml, and Jenkinsfile) are fully reusable. Focus only on identifying the main nouns (objects) and verbs (actions) of the new problem, and replacing them into App.java and AppTest.java.
 
@@ -88,3 +89,4 @@ give based on the scenario:
 9. Push the image to Docker Hub:'docker push praveen0210/delivery-system:latest'
 10. Deploy the application to Kubernetes: 'kubectl apply -f deployment.yaml'
 11. Verify the deployment and pods: 'kubectl get pods ,kubectl get svc'
+Source :ChatGPT
