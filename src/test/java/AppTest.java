@@ -28,4 +28,22 @@ public class AppTest {
         boolean result = app.isValid(null);
         assertFalse(result); 
     }
+
+    @Test
+    public void testValidDeliverySlot() {
+        App app = new App();
+        App.DeliverySlot slot = new App.DeliverySlot(false); 
+        
+        boolean result = app.validateSlot(slot);
+        assertTrue(result); 
+    }
+
+    @Test
+    public void testBookedDeliverySlot() {
+        App app = new App();
+        App.DeliverySlot slot = new App.DeliverySlot(true); 
+        
+        boolean result = app.validateSlot(slot);
+        assertFalse(result); 
+    }
 }

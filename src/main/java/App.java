@@ -19,16 +19,29 @@ public class App {
         }
     }
 
+    public static class DeliverySlot {
+        public boolean isBooked;
+
+        public DeliverySlot(boolean isBooked) {
+            this.isBooked = isBooked;
+        }
+    }
+
     public boolean isValid(Order order) {
         if (order == null) {
             return false;
         }
         
         // check minimum amount is 10
-        if (order.totalAmount >= 10.0) {
-            return true;
-        } else {
+        return order.totalAmount >= 10.0;
+    }
+
+    public boolean validateSlot(DeliverySlot slot) {
+        if (slot == null) {
             return false;
         }
+        
+        // check if slot is already booked
+        return !slot.isBooked;
     }
 }
