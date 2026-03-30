@@ -21,6 +21,19 @@ Architecture Overview: A Simple Journey
 - The Manager (Kubernetes): The container is handed to Kubernetes, which acts as the orchestrator to keep multiple copies of the app healthy and alive on the internet.
 
 Project Structure
+simple-java-app/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── App.java          <-- Contains Domain Models, Logic, and Main method
+│   └── test/
+│       └── java/
+│           └── AppTest.java      <-- Contains all JUnit (5 tests cases)
+├── pom.xml                       <-- Configured to build App.java as the main executable
+├── Dockerfile                    <-- Containerizes the compiled App class
+├── deployment.yaml               <-- Defines the Kubernetes Deployment and Service
+└── Jenkinsfile                   <-- Kept to retain your CI/CD pipeline capabilities
+
 - src/main/java/App.java: The core application containing our data models and validation rules.
 - src/test/java/AppTest.java: The automated JUnit test suite that proves our logic is secure.
 - pom.xml: The Maven file managing our compilation process and testing plugins.
@@ -48,4 +61,4 @@ Future Enhancements
 Conclusion
 In the end, this project was primarily built to understand how business logic and DevOps pipelines work together. By separating the rules (the Java code) from the infrastructure (Jenkins and Kubernetes), we created a system that is incredibly easy to test, update, and deploy. The code does exactly what it needs to do—preventing bad orders and double-booked deliveries—while the automated robots handle the heavy lifting of getting it onto the internet.
 
-Source: 
+Sourced From ChatGPT
