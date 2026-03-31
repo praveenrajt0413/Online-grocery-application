@@ -17,7 +17,7 @@ spec:
       containers:
       - name: delivery-system
         image: praveen0210/delivery-system:latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         resources:
