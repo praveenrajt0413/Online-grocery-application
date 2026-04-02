@@ -3,8 +3,8 @@ issue of this :
 
 
 
-
-### Step 1: Verify Kubernetes is Running on the Lab System
+Kubernetes issue solution
+### Step 1: Verify Kubernetes is Running on the  System
 Before connecting Jenkins, make sure a Kubernetes cluster (like Docker Desktop or Minikube) is actually running.
 
 1. Open a regular Command Prompt or PowerShell on the lab computer.
