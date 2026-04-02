@@ -1,5 +1,6 @@
 issue of this :
-<img width="1600" height="852" alt="Screenshot 2026-04-01 192649 (1)" src="https://github.com/user-attachments/assets/36d347ec-0c4f-4164-be77-f66dcfaf1c7c" />
+<img width="1104" height="741" alt="image" src="https://github.com/user-attachments/assets/d4d3272a-ae15-4eb2-b146-c36f75a3f3ae" />
+
 
 
 
