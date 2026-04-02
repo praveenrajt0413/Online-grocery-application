@@ -1,8 +1,7 @@
-Here is a complete, step-by-step guide you can follow on your lab system to resolve this issue and successfully deploy to Kubernetes from Jenkins.
+issue of this :
+<img width="1600" height="852" alt="Screenshot 2026-04-01 192649 (1)" src="https://github.com/user-attachments/assets/36d347ec-0c4f-4164-be77-f66dcfaf1c7c" />
 
-The error happens because Jenkins on Windows runs as a hidden background system account (usually "Local System"). This background account doesn't know where your Kubernetes cluster is because it doesn't have access to your regular user's configuration file (`.kube/config`).
 
-Here is how to check your cluster status and connect it to Jenkins.
 
 ### Step 1: Verify Kubernetes is Running on the Lab System
 Before connecting Jenkins, make sure a Kubernetes cluster (like Docker Desktop or Minikube) is actually running.
@@ -23,7 +22,7 @@ You can use one of two methods to give Jenkins access. **Method A** is the best 
 #### Method A: The Proper Way (Using Jenkins Credentials)
 This method ensures your pipeline explicitly loads the Kubernetes configuration.
 
-1. **Locate your `kubeconfig` file:** Go to your user directory (e.g., `C:\Users\YourLabUser\.kube\`) and find the file simply named `config`. Note where this is.
+1. **Locate your `kubeconfig` file:** Go to your user directory (`C:\Users\batch1\.kube\`) and find the file simply named `config`. Note where this is.
 2. **Install the Kubernetes Plugin in Jenkins:**
    * Open Jenkins in your browser.
    * Go to **Manage Jenkins** -> **Plugins** -> **Available plugins**.
